@@ -77,7 +77,7 @@ def register(username):
     print("Please enter a password for this user:")
     passwords = input()
     print("User " + userinput + " registered")
-    username[userinput] = {'Name': userinput, 'Password': passwords}
+    username[userinput] = {'Username': userinput, 'Password': passwords}
     with open('Data.csv', 'w') as wf:
         fieldnames = ['Username', 'Password']
         writer = csv.DictWriter(wf, fieldnames=fieldnames)
